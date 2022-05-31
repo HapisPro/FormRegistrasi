@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Registrasi Siswa</title>
+
+  <!-- Style -->
+  <link rel="stylesheet" href="./style/style.css" />
+  <!-- Boxicons -->
+  <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet" />
+</head>
+
+<body>
+  <div class="container">
+    <h1>Registrasi Siswa</h1>
+
+    <form action="php/query.php" id="form" method="post">
+      <div class="inputgrup">
+        <input type="text" placeholder="NIS" id="nis" name="nis" />
+        <i class="bx bxs-error-circle"></i>
+        <small>Error message</small>
+      </div>
+      <div class="inputgrup">
+        <input type="text" placeholder="Nama" id="nama" name="nama" />
+        <i class="bx bxs-error-circle"></i>
+        <small>Error message</small>
+      </div>
+      <div class="inputgrup">
+        <input placeholder="Tanggal Lahir" type="text" onfocus="(this.type = 'date')" onblur="(this.type = 'text')"
+          id="tglahir" name="tglLahir" />
+      </div>
+      <div class="inputgrup">
+        <input type="text" placeholder="Nomor Handphone" id="nohp" name="nohp" />
+        <i class="bx bxs-error-circle"></i>
+        <small>Error message</small>
+      </div>
+      <div class="inputgrup">
+        <input type="email" placeholder="Email" id="email" name="email" />
+        <i class="bx bxs-error-circle"></i>
+        <small>Error message</small>
+      </div>
+
+      <button class="btn">Registrasi</button>
+    </form>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="script.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+
+</html>
